@@ -1,4 +1,5 @@
 #define Addr 0x76
+
 void doBMP()
 {
   unsigned int b1[24];
@@ -100,10 +101,11 @@ void doBMP()
   var2 = p * ((double) dig_P8) / 32768.0;
   double pressure = (p + (var1 + var2 + ((double)dig_P7)) / 16.0) / 100;
 
+//temporary 
+
+PBMP = pressure;
+TBMP = cTemp;
   // Output data to serial monitor
-  Serial.print(pressure);
-  Serial.print("\t");
-  Serial.print(cTemp);
-  Serial.print("\t");
+
   delay(1000);
 }
