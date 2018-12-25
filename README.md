@@ -1,2 +1,2 @@
 # weather
-Weather Station Sensor project using Arduino, Firebase, JS
+Weather Station Sensor logging project using the Arduino and ThingSpeak
